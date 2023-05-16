@@ -1,0 +1,47 @@
+h1 {
+    font-size: 48px; /* размер шрифта */
+    color: green; /* цвет шрифта */
+    text-align: center; /* выравнивание */
+}
+div {
+    background-color: lightgreen; /* цвет фона */
+    padding: 50px; /* внутренний отступ */
+    border: 3px solid green; /* граница, рамка */
+}
+.post-1 {
+    margin-bottom: 50px; /* отступ снизу */
+}
+img {
+    width: 500px; /* ширина 500px */
+    margin-top: 30px;
+}
+/* 
+    border: размер, тип, цвет
+
+    Задача. Сделать отступ между заголовком h3 и img размером 30px
+
+    селектор:
+        1. по названию тега - h1 {}, div {}, p {}
+        2. по классу - .className, .post-1, .button-1, .user-profile, .username
+
+    margin - ВНЕШНИЙ отступ
+    1. margin-top - отступ сверху
+    2. margin-right - отступ справа
+    3. margin-bottom - отступ снизу
+    4. margin-left - отступ слева 
+
+    padding - ВНУТРЕННИЙ отступ
+    1. padding-top - отступ сверху
+    2. padding-right - отступ справа
+    3. padding-bottom - отступ снизу
+    4. padding-left - отступ слева 
+
+    Если меняем ширину картинку, то высота масштабируется автоматически
+
+    shift + Х
+
+    селектор {
+        свойство: значение свойства
+    }
+    селектор - выбор элемента из html
+*/
