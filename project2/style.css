@@ -1,7 +1,27 @@
 ul {
     list-style-type: none;
 }
-
+table, td, th {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+.laptop-table {
+    margin-top: 50px;
+}
+.grey {
+    background-color: grey;
+}
+.sum {
+    color: red;
+}
 /*
+    :nth-child()
+
+    font-size: Npx;  
+
+    border: размер, тип, цвет;
+    solid - граница с одной полоской
     list-style-type - свойсвто, определяющее маркер пунктов списка
 */
