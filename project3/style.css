@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* свойства width и height включают в себя значения padding, border */
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: violet;
+}
+.item {
+    width: 200px; /* ширина. calc(100vw / 8). height: calc(100vw / 8) */
+    height: 200px; /* высота */
+    background-color: rgb(106, 183, 106);
+    margin: 10px; /* отступ со всех сторон */
+}
+
+/* 
+    1. flexbox froggy
+    2. создать папку images в project3,
+         загрузить 8 картинок (желательно одинаковых пропорций 16/9) на одну тему
+
+    ctrl+/  - комментарий
+
+    700px
+
+    100vh - высота рабочего окна браузера. 1vh - 1/100 высоты вашего экрана
+    vh - view height 
+
+    flex - свойство, которое позволяет позиционировать элементы по горизонтали в одну строку
+    по умолчанию flex размещает все элементы в одну строку
+
+    p {
+        color: red; - цвет текста
+    }
+    body {
+        background-color: red;
+    }
+
+    селекторы:
+        1. по классу - .className, .item, .user
+        2. по тегу - tagName, h1, p, a
+        3. все элементы - *
+
+    Обнуление стилей по умолчанию. В каждом проекте нужно обнулять отступы 
+
+    li
+*/
