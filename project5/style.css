@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+.item-2 {
+    position: absolute;
+    background-color: darkorange;
+    left: 40px;
+    top: 40px;
+    z-index: -1; /* поместить на задний план */
+}
+.item-3 {
+    background-color: fuchsia;
+}
