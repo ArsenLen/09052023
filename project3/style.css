@@ -3,20 +3,72 @@
     padding: 0;
     box-sizing: border-box; /* свойства width и height включают в себя значения padding, border */
 }
+header {
+    background-color: rgb(235, 235, 235); /* цвет фона */
+    padding: 20px; /* внутрненний отступ */
+}
+h1 {
+    font-size: 48px; /* размер шрифта */
+    text-align: center; /*  выравнивание по центру */
+}
+h1:hover {
+    /* стили будут применяться только тогда, когда мы навели на элемент мышью */
+    color: red;
+}
 main {
+    width: 90%;
+    margin: auto; /* центрирование блоков */
     display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
-    background-color: violet;
+    flex-wrap: wrap; /* flex на несколько строк */
+    padding: 30px;
+    background-color: rgb(240, 240, 240);
+    margin-top: 50px;
+    border-radius: 8px; /* закгруглить углы блока */
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5); /* тень блока */
 }
 .item {
-    width: 200px; /* ширина. calc(100vw / 8). height: calc(100vw / 8) */
-    height: 200px; /* высота */
+    width: calc(50% - 20px); /* ширина. calc(100vw / 8). height: calc(100vw / 8) */
+    /* height: 250px; высота */
+    aspect-ratio: 16/9; /*  соотношение сторон 16 - ширина, 9 - высота */
     background-color: rgb(106, 183, 106);
     margin: 10px; /* отступ со всех сторон */
+    background-size: cover;
+    background-repeat: no-repeat; /* отменяем повторение */
+    transition: 1s; 
 }
-
+.item:hover {
+    transform: scale(1.05) rotate(5deg); /* пропорциональное. 1 - 100% 0.5 - 50%, 1.5 - 150% */
+    /* scale - масштабирование картинки. rotate - поворот картинки */
+}
+.item-1 {
+    background-image: url(./images/img1.jpg);
+}
+.item-2 {
+    background-image: url(./images/img2.jpg);
+}
 /* 
+    псевдокласс - специальное состояние блоков
+        :hover - отвечает за специальное состояние элемента - состояние при наведннии
+
+    ./ - в той же директории 
+    ../ - на директорию выше
+    ../../ - дважды на директорию выше
+
+
+    Тег img испольуется тогда, когда картинка несет информационный смысл (картинка товара)
+    background-image - когда просто фон
+
+    background-size: 
+        1. cover - картинка занимает всю ширину блока, по высоте масштабируется
+        2. contain - картинки занимает всю высоту блока, а по ширине масштабируется
+
+
+    aspect-ratio: 1/1
+
+
+    100/4 = 25%
+    100/3 = 33%
+
     1. flexbox froggy
     2. создать папку images в project3,
          загрузить 8 картинок (желательно одинаковых пропорций 16/9) на одну тему
@@ -28,7 +80,7 @@ main {
     100vh - высота рабочего окна браузера. 1vh - 1/100 высоты вашего экрана
     vh - view height 
 
-    flex - свойство, которое позволяет позиционировать элементы по горизонтали в одну строку
+    flex - свойство, которое позволяет позиционировать элементы по горизонтали 
     по умолчанию flex размещает все элементы в одну строку
 
     p {

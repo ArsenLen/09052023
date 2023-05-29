@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    /* height: 100vh;
+    overflow-y: hidden; */
+    background-color: #EEEFF1;
+    padding: 100px 0; /* 100px - сверху и снизу, 0 - справа/слева */
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    width: 30%;
+    margin: auto; 
+}
+h3 {
+    font-size: 32px; /* размер шрифта */
+    font-weight: 500; /* жирность шрифта */
+    text-align: center; /* центрирование текста */
+    margin-bottom: 50px;
+}
+p {
+    color: #727272;
+    text-align: center;
+    margin-bottom: 65px;
+}
+.form-control {
+    display: flex;
+    gap: 30px; /* отступ между элементами внутри flex-контейнера */
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="email"] {
+    width: 50%;
+    padding: 20px;
+    border: none; /* убираем границу блока */
+    outline: none; /* убираем границу, которая появляется при фокусе(нажатии) */
+    caret-color: rgb(27, 27, 185); /* цвет курсора */
+    /* border: 1px solid transparent; */
+}
+input[type="text"]:focus {
+    border: 1px solid rgb(27, 27, 185);
+}
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+input[type="submit"] {
+    display: block;
+    margin: 50px auto 0; /* 50px - сверху, auto - справа/слева, 0 - снизу */
+    background-color: #34547A;
+    padding: 20px 45px;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase; /* буквы в верхнем регистре */
+    letter-spacing: 0.15em; /* отступы между буквами */
+}
+input, textarea {
+    font-family: 'Roboto', sans-serif;
+} 
+input::placeholder {
+    /* меняем стили placeholder */
+    /* color: red; */
+}
+/* 
+    :not(:last-child) 
+
+    height: 100vh
+
+    focus - псевдокласс - состояние элемента в фокусе (при нажатии на input)
+
+    padding: 10px 20px 30px 40px;
+        1. top сверху
+        2. right справа
+        3. bottom снизу
+        4. left слева
+
+    padding: 10px 20px;
+        1. top-bottom
+        2. left-right
+    
+    padding: 10px 20px 30px;
+        1. top
+        2. left-right
+        3. bottom
+
+    .form-control input {
+        только те input, которые лежат внутри div.form-control
+    }
+
+    селекторы
+        1. по тегу - h1 {}, h3 {}
+        2. по классу - .wrapper {}, .item {}
+        3. по id - #idName
+        4. по атрибуту input[type="text"], input[type="submit"]
+*/
+

@@ -7,15 +7,24 @@ div {
     background-color: lightgreen; /* цвет фона */
     padding: 50px; /* внутренний отступ */
     border: 3px solid green; /* граница, рамка */
+    border-radius: 15px; /* закругление углов блока */
 }
 .post-1 {
     margin-bottom: 50px; /* отступ снизу */
 }
+h3 {
+    font-size: 28px;
+}
 img {
-    width: 500px; /* ширина 500px */
+    width: 700px; /* ширина 500px */
     margin-top: 30px;
 }
+p {
+    font-size: 22px;
+}
 /* 
+    Задача. Увеличить размер заголовков поста до 28px, а описание постов до 22px
+
     border: размер, тип, цвет
 
     Задача. Сделать отступ между заголовком h3 и img размером 30px
