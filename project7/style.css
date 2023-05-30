@@ -1,0 +1,42 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Oswald:wght@500&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+header {
+    background-color: #1ABC9C;
+    padding: 15px 0; /* 15px - сверху/снизу, 0 - справа/слева */
+}
+.wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link {
+    font-size: 25px;
+    text-decoration: none; /* убираем нижнее подчеркивание */
+    color: black;
+}
+.nav-link:not(:last-child) {
+    margin-right: 20px;
+}
+.social-icon:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* 
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+
+    background: url(./img1.jpg) blue cover center no-repeat;
+
+    .nav-link:last-child - селектор для последнего
+    .nav-link:not(:last-child) - селектор для всех, кроме последнего
+*/

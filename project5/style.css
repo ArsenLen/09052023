@@ -3,18 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-.item {
-    width: 200px;
-    height: 200px;
-    background-color: royalblue;
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    top: 0;
 }
-.item-2 {
-    position: absolute;
-    background-color: darkorange;
-    left: 40px;
-    top: 40px;
-    z-index: -1; /* поместить на задний план */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0; /* 20px - сверху/снизу, 0 - справа/слева */
 }
-.item-3 {
-    background-color: fuchsia;
+a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none; /* убираем нижнее подчеркивание ссылки */
 }
+section {
+    height: 100vh;
+}
+#red {
+    margin-top: 70px;
+    background-color: rgb(192, 52, 52);
+}
+#green {
+    background-color: rgb(115, 216, 115);
+}
+#yellow {
+    background-color: rgb(221, 221, 101);
+}
+#blue {
+    background-color: rgb(98, 98, 220);
+}
+/* 
+    селекторы
+        1. по тегу - nav {}, h1 {}
+        2. по классу - .item, .className
+        3. по id - #red, #user
+*/
