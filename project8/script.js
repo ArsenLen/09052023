@@ -18,13 +18,78 @@
         1. Создать переменные для хранения названия продукта, имени пользователя, цены продукта 
         2. Отобразить каждую переменную в консоли
 */
-const productName = "Milk"
-const userName = "Arsen"
-const productPrice = 10000
+// const productName = "Milk"
+// const userName = "Arsen"
+// const productPrice = 10000
 
-console.log(productName, productPrice)
-console.log(userName)
+// console.log(productName, productPrice)
+// console.log(userName)
 
+
+// let price = 2000
+// const price1 = 3000
+
+// price = 5000
+// price1 = 7000 
+// console.log(price)
+// console.log(price1)
+
+// Задача. Запросить два числа у пользователя и в консоли отобразить их сумму.
+// const number = +prompt("Введите первое число") // запросили первое число и сохранили в переменную number
+// const number1 = +prompt("Введите второе число") // запросили второе число и сохраниил в number1
+// // console.log(number + number1) // отображаем пользователю сумму двух чисел
+// const sum = number + number1 
+// console.log(sum)
+
+// Задача. Запросить у пользователя число. В консоли вывести квадрат этого числа.
+// const number = +prompt("Введите число")
+// console.log(number * number) // квадрат числа
+// console.log(number ** 2) // number ** 3, number ** 4 
+// console.log(Math.pow(number, 2)) // Math.pow(число, степень)
+
+// Задача. Запросить у пользователя имя. В консоли вывести "Привет, {введенное имя}"
+// const name = prompt("Введите ваше имя")
+// console.log("Привет, " + name) // конкатенация
+// console.log(`Привет, ${name}`) // интерполяция
+
+// Задача. Запросить у пользователя имя и возраст. В консоли вывести 
+// "Привет, {введенное имя}. Вам {введенный возраст} лет"
+// const username = prompt("Введите ваше имя")
+// const userage = prompt("Введите ваш возраст")
+
+// console.log("Привет, " + username + ". Вам " + userage + " лет")
+// console.log(`Привет, ${username}. Вам ${userage} лет`)
+
+// Задача. Есть три переменные r, g, b. В консоль вывести строку "rgb(r, g, b)"
+// const r = 15
+// const g = 51
+// const b = 120
+
+// console.log(`rgb(${r}, ${g}, ${b})`)
+
+// document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+
+// rgb({r}, {g}, {b}) -> rgb(15, 51, 120)
+
+/*
+    + - сумма
+    - - разность
+    * - произведение
+    / - деление
+    ** - возведение в степень 
+
+    конкатенация - склеивание строк. 
+    prompt всегда возвращает строку, чтобы получить число - нужно поставить + перед prompt()
+*/
+
+/*
+    Когда мы знаем, что значение переменной будет меняться - используем let
+    В остальных случаях используем const - константа - постоянная переменная
+*/
+
+/*
+    = - это оператор присваивания. присваиваем значение переменной - храним в переменной значение
+*/
 
 
 /*

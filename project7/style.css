@@ -29,8 +29,95 @@ header {
 .social-icon:not(:last-child) {
     margin-right: 20px;
 }
-
+/* О нас */
+.about {
+    display: flex;
+    align-items: center;
+}
+.about-img {
+    width: 50%;
+}
+.about-info {
+    width: 50%;
+    padding: 0 65px;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-text {
+    font-size: 20px; /* размер шрифта */
+    text-align: justify; /* выравнивание по ширине */
+}
+/* Наши проекты */
+.projects {
+    background-color: #DCFFEB;
+    padding: 125px 0; /* 125-сверху/снизу, 0 - справа/слева */
+}
+.projects-wrapper {
+    width: 90%;
+    margin: auto;
+}
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.projects-list {
+    display: flex;
+    gap: 40px; /* отступ между flex-элементами */
+}
+.project {
+    width: 33%;
+    aspect-ratio: 1.15/1;
+    background-image: url(./images/project-img.png);
+    background-size: 100%; /* картинка масштабируется под размеры блока */
+    display: flex;
+    align-items: flex-end;
+}
+.project-hover { /* div, который виден только при наведении на .project */
+    padding: 30px 35px 15px; /* сверху, справа/слева, снизу */
+    background-color: rgba(0, 0, 0, 0.38);
+    opacity: 0; /* прозрачность */
+}
+.project:hover .project-hover { /* обращаемся к классу .project-hover только когда навели на .project */
+    opacity: 1; /* возвращаем изначальную прозрачность */
+    transition: 1s;
+}
+h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+.project-hover-text {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
 /* 
+    .project-hover h5 {  } - только тот h5, который находится внутри .project-hover
+
+    .project .project-hover {} - только тот .project-hover, который находится внутри .project
+
+    cover - по ширине на 100%, по высоте масштабируется
+    contain - по высоте на 100%, по ширине масштабируется
+
+    aspect-ratio - соотношение сторон
+        width: 100px; 
+        aspect-ratio: 1/1;  ---> height = 100px 
+        aspect-ratio: 1/2;  ---> height = 200px
+        aspect-ratio: 1/1.5 ---> height = 150px
+
+
+    1920
+    1366
+    992
+    768
+    480
+    320
+
     font-family: 'Inter', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Oswald', sans-serif;
