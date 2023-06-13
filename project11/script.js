@@ -37,20 +37,20 @@
 // Создать массив объектов products.
 // У каждого должны быть свойства name, price
 // Всего продуктов будет 3
-const products = [
-    {
-        name: "Iphone 13",
-        price: 10000
-    },
-    {
-        name: "Iphone 14",
-        price: 15000
-    },
-    {
-        name: "Iphone 15",
-        price: 20000
-    }
-]
+// const products = [
+//     {
+//         name: "Iphone 13",
+//         price: 10000
+//     },
+//     {
+//         name: "Iphone 14",
+//         price: 15000
+//     },
+//     {
+//         name: "Iphone 15",
+//         price: 20000
+//     }
+// ]
 
 
 // Задача. Посчитать сумму стоимости всех продуктов в массиве products и вывести в консоли
@@ -109,26 +109,26 @@ const products = [
 // Задача. Создать массив объектов users.
 // У каждого пользователя в объекте будут свойства email, login, age
 // Создать три объекта
-const users = [
-    {
-        name: "Yuliya",
-        email: "yuliya@gmail.com",
-        login: "Simbo7",
-        age: 23
-    },
-    {
-        name: "Arsen",
-        email: "arsen@gmail.com",
-        login: "Simbo77",
-        age: 15
-    },
-    {
-        name: "Alexander",
-        email: "alex@gmail.com",
-        login: "Simbo777",
-        age: 25
-    },
-]
+// const users = [
+//     {
+//         name: "Yuliya",
+//         email: "yuliya@gmail.com",
+//         login: "Simbo7",
+//         age: 23
+//     },
+//     {
+//         name: "Arsen",
+//         email: "arsen@gmail.com",
+//         login: "Simbo77",
+//         age: 15
+//     },
+//     {
+//         name: "Alexander",
+//         email: "alex@gmail.com",
+//         login: "Simbo777",
+//         age: 25
+//     },
+// ]
 // Отобразить в консоли имя и email каждого пользователя в виде, используя цикл for
 // "Ваш email - {email пользователя}, а ваш логин - {login пользователя}"
 // 1. "Ваш email - yuliya@gmail.com, а ваш логин - Simbo7"
@@ -154,13 +154,13 @@ const users = [
 
 // Создать новый массив, в который поместить логины только тех пользователей, 
 // возраст которых больше 18
-const validatedUsers = [] //
-for(let i = 0; i < users.length; i++) {
-    if(users[i].age > 18) {
-        validatedUsers.push({login: users[i].login, age : users[i].age}) // push - метод который добавляет элемент в конец массива
-    }
-}
-console.log(validatedUsers)
+// const validatedUsers = [] //
+// for(let i = 0; i < users.length; i++) {
+//     if(users[i].age > 18) {
+//         validatedUsers.push({login: users[i].login, age : users[i].age}) // push - метод который добавляет элемент в конец массива
+//     }
+// }
+// console.log(validatedUsers)
 
 
 
@@ -178,7 +178,49 @@ console.log(validatedUsers)
 // ["Arsen", "Vasily", "Aleksey"].push("Vladyslav")
 //[ "Vladyslav","Arsen", "Vasily", "Aleksey",]
 
+// Есть массив объектов products. Нужно вывести в консоли имена только тех продукты,
+// категория которых - TV
 
+// const products = [
+//     {
+//         name: "Acer",
+//         category: "laptop"
+//     },
+//     {
+//         name: "Samsung",
+//         category: "TV"
+//     },
+//     {
+//         name: "Iphone 14",
+//         category: "phone"
+//     },
+//     {
+//         name: "Panasonic",
+//         category: "TV"
+//     }
+// ]
+
+// for(let i = 0; i < products.length; i++) {
+//     if(products[i].category == "TV") {
+//         console.log(products[i].name)
+//     }
+// }
+/*
+    length = 4
+    1. let i = 0, 0 < 4 - true, products[0].category == TV - false, i++
+    2. i = 1, 1 < 4 - true, products[1].category == TV - true, console.log("Samsung"), i++
+    3. i = 2, 2 < 4 - true, products[2].category == TV - false, i++,
+    4. i = 3, 3 < 4 - true, products[3].category == TV - true, console.log("Panasonic"), i++
+    5. i = 4, 4 < 4 - false, ВЫХОД из цикла
+*/
+
+
+/*
+    const username = "Arsen"
+    const username1 = "Arsen"
+
+    username == username1 - true
+*/
 
 
 /*
