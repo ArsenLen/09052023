@@ -165,7 +165,7 @@
 // const googleLink = document.querySelector("main a")
 // googleLink.innerText = "Facebook"
 // googleLink.setAttribute("href", "https://fb.com")
-// // const href = googleLink.getAttribute("href")
+const href = googleLink.getAttribute("href")
 // console.log(href)
 
 // Задача. Поменять у всех ссылок текст на Instagram
@@ -177,6 +177,14 @@ for(let i = 0; i < links.length; i++) {
     links[i].setAttribute("href", "https://instagram.com")
 }
 
+
+const vylet = +prompt("Во сколько вылетаете?")
+const duration = +prompt("Сколько вреемени потребуется")
+
+/*
+    16+8=24
+    20+8=28
+*/
 
 /*
     getAttribute(attr) - метод, для получения значение атрибута тега
